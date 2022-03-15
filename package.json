@@ -1,0 +1,14 @@
+{
+  "name": "estudo-jest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/MarcusVincius0907/estudo-jest.git",
+  "author": "Marcus Vinicius Leite <marcus.leite.ext@rendimento.com.br>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
