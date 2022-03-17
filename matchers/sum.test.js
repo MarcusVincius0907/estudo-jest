@@ -1,3 +1,5 @@
+//video: https://www.youtube.com/watch?v=ajiAl5UNzBU
+
 const sum = require('./sum.js');
 
 describe("example test 1", () => {
@@ -30,6 +32,36 @@ describe("numbers", () => {
     expect(value).toBeGreaterThan(3);
     expect(value).toBeGreaterThanOrEqual(4);
   })
+
+  it('adding floats', () => {
+    const value = 0.1 + 0.2;
+    expect(value).toBeCloseTo(0.2999999)
+  })
+
 })
 
-//video: https://www.youtube.com/watch?v=ajiAl5UNzBU
+describe("string", () => {
+  it('there is no I in team', () => {
+    expect("team").not.toMatch(/I/)
+  })
+})
+
+describe("arrays", () => {
+  it('check if contain', () => {
+    const arr = [
+      'banana', 'apple', 'grape'
+    ]
+    expect(arr).toContain('banana');
+  })
+})
+
+function compileSomething(){
+  throw new Error("error to compile");
+}
+
+describe("exceptions", () => {
+  it("compile something", () => {
+    expect(() => compileSomething()).toThrow()
+  })
+})
+
